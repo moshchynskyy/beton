@@ -1,0 +1,48 @@
+.footer {
+  background-color: rgb(25, 44, 123);
+  min-height: 10px;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-size: 12px;
+  //padding: 40px 0px 80px;
+  &-main {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &-col {
+    &:nth-child(1) {
+      flex-basis: 210px;
+    }
+    &:nth-child(2) {
+      flex: 1 1 auto;
+      margin-left: 60px;
+    }
+  }
+  &-first-title {
+    border-bottom: 1px solid rgba(255,255,255,.5);
+    padding: 15px 0;
+    margin-bottom: 25px !important;
+  }
+  &-title {
+    font-size: 17px;
+    font-family: 'Ubuntu', sans-serif;
+    padding-left: 15px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  &-text {
+    padding-left: 15px;
+    margin-bottom: 20px;
+    a {
+      color: #fff;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &-soc-link {
+    margin-right: 15px;
+
+  }
+}

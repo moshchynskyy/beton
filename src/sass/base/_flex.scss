@@ -1,0 +1,25 @@
+// properties for flex elements
+
+.flex-container {
+  display: flex;
+}
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+.flex-baseline {
+  justify-content: center;
+  align-items: baseline;
+}
+.flex-side {
+  justify-content: space-between;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-end {
+  align-items: flex-end;
+}

@@ -1,0 +1,82 @@
+
+
+// Transition
+@mixin mt($time) {
+	transition: all $time ease-in-out
+}
+
+
+// Hide text
+@mixin hide-text {
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+}
+
+
+@mixin hidetext {
+	@include hide-text
+}
+
+// Truncated text
+@mixin text-overflow {
+	overflow: hidden;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+
+// Super light grid system: (+column(0.5))
+@mixin column($percentage, $float-direction:left)  {
+	width: 100% * $percentage;
+	float: $float-direction;
+}
+
+
+// Styling links: a @include linx(currentColor)
+// Default links: simple color
+@mixin dlinx ($link) {
+	color: $link;
+	text-decoration: none;
+		&:hover {
+			color: $link;
+			text-decoration: none;
+		}
+		&:focus {
+			color: $link;
+			text-decoration: none;
+		}
+		&:active {
+			color: $link;
+			text-decoration: none;
+		}
+};
+// Styled links
+@mixin slinx ($link, $hover, $focus, $active) {
+	color: $link;
+	text-decoration: none;
+		&:hover {
+			color: $hover;
+			text-decoration: none;
+		}
+		&:focus {
+			color: $focus;
+			text-decoration: none;
+		}
+		&:active {
+			color: $active;
+			text-decoration: none;
+		}
+};
+
+
+// no-bullets mixin
+@mixin no-bullets {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    li:before {
+      display: none;
+    }
+}

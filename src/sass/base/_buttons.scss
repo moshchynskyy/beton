@@ -1,0 +1,53 @@
+.mybtn {
+	appearance: none;
+	font-size: responsive 12px 14px;
+	border-radius: 0;
+	border: 2px solid #fff;
+	cursor: pointer;
+	font-family: $main-font;
+	font-weight: 600;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	padding: 10px 30px;
+	//background: $main;
+	//border-color: $main;
+	color: white;
+	//text-transform: uppercase;
+	outline: none !important;
+	transition: all 100ms ease-out;
+	&:hover {
+		background: #fff;
+		//color: $main;
+		//border-color: $main;
+		text-decoration: none;
+	}
+	&.btn-fixed {
+		position: fixed;
+		background: rgb(177,85,96);
+		border-color: rgb(177,85,96);
+		z-index: 9999;
+		top: 0;
+		box-shadow: 0px 0px 5px 0px rgba(177,85,96,0.75);
+		&:hover {
+			background: #fff;
+			color: rgb(177,85,96);
+		}
+	}
+	&.btn-second {
+		border-color: rgb(40,40,40);
+		color: rgb(40,40,40);
+		&:hover {
+            color: #fff;
+			background: rgb(40,40,40);
+		}
+		&:focus {
+			color: #fff;
+			background: rgb(40,40,40);
+		}
+		&:active {
+			color: #fff;
+			background: rgb(40,40,40);
+		}
+	}
+}

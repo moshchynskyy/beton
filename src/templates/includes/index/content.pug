@@ -1,0 +1,54 @@
+main.main#main
+    .about
+        .about-text-wrapper
+            p.title.about-title#about  Про нас
+            p.about-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cum delectus ex harum incidunt iusto perferendis quia similique vitae voluptates. Animi asperiores eveniet excepturi facilis fugit provident rerum voluptatem voluptatum!
+            p.about-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cum delectus ex harum incidunt iusto perferendis quia similique vitae voluptates. Animi asperiores eveniet excepturi facilis fugit provident rerum voluptatem voluptatum!
+            p.about-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cum delectus ex harum incidunt iusto perferendis quia similique vitae voluptates. Animi asperiores eveniet excepturi facilis fugit provident rerum voluptatem voluptatum!
+        img.about-img.about-img-1(src="./images/img1.png" alt="img" title="img")
+        img.about-img.about-img-2(src="./images/img2.png" alt="img" title="img")
+    hr.title-line
+    h2.title.main-title Новини та події
+    .news#news
+        .news-wrapper
+            .row
+                - for(var n = 0; n < 4; n++)
+                    .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                        .news-view
+                            img.news-img(src="./images/news3.png" alt="news" title="news")
+                            .news-text-wrapper
+                                span.news-date 28.05.2014
+                                p.news-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quasi sequi veniam voluptate! Aut excepturi explicabo harum iure laborum, omnis quae qui recusandae! Aliquam architecto id, nemo praesentium quisquam repudiandae.
+                                a.news-link.transition Читати
+                .col-xs-12
+                    a.news-link-main.transition(href="./news.html") Відкрити всі новини
+
+    hr.title-line
+    h2.title.main-title#gallery Галерея
+    .gallery
+        .gallery-border
+        .gallery-slider
+            .slider.slider-for
+                div
+                    img(src="./images/slider1.png" alt="gallery" title="gallery")
+                div
+                    img(src="./images/slider1.png" alt="gallery" title="gallery")
+                div
+                    img(src="./images/slider1.png" alt="gallery" title="gallery")
+                div
+                    img(src="./images/slider1.png" alt="gallery" title="gallery")
+                div
+                    img(src="./images/slider1.png" alt="gallery" title="gallery")
+            .slider.slider-nav
+                div
+                    img(src="./images/slider1.png" alt="gallery" title="gallery")
+                div
+                    img(src="./images/slider1.png" alt="gallery" title="gallery")
+                div
+                    img(src="./images/slider1.png" alt="gallery" title="gallery")
+                div
+                    img(src="./images/slider1.png" alt="gallery" title="gallery")
+                div
+                    img(src="./images/slider1.png" alt="gallery" title="gallery")
+    hr.title-line
+    h2.title.main-title#contacts Контакти

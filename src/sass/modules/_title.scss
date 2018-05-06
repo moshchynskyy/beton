@@ -1,0 +1,15 @@
+.title {
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: responsive 24px 37px;
+  color: rgb(25, 44, 123);
+  text-transform: uppercase;
+  &-line {
+    width: 90px;
+    background-color: rgb(204,204,204);
+    height: 1px;
+    margin: 10px auto;
+    border: 0;
+  }
+}
