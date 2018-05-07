@@ -2,6 +2,105 @@
   #toggle-menu {
     display: block;
   }
+  .header > .container {
+    width: 100%;
+  }
+  .footer > .container {
+    width: 100%;
+  }
+  .main .about-text-wrapper {
+    width: 90%;
+    margin: 0 5%;
+  }
+  .main .about-img-2 {
+    top: -160px;
+  }
+  .main .about {
+    margin-bottom: -150px;
+  }
+  .gallery {
+    padding: 0 15px 80px;
+  }
+  .gallery-slider {
+    margin-top: 80px;
+  }
+  .lang-wrap {
+    padding-right: 20px;
+  }
+  .header-wrap {
+    height: 315px;
+  }
+  .header-block {
+    min-height: 200px;
+    top: 75px;
+  }
+  .header__nav {
+    display: none;
+    top: 315px;
+    margin-top: 0;
+  }
+  #toggle-menu {
+    z-index: 99;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+  }
+  .header {
+    min-height: 365px;
+    z-index: 11;
+  }
+  .header__menu-link {
+    display: block;
+    text-align: left;
+  }
+  .header__menu-item {
+    padding: 8px 0;
+    flex-basis: 100%;
+    display: block;
+    text-align: left;
+  }
+  .header__menu-list {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: rgba(#192c7b, .9);
+    flex-wrap: wrap;
+    z-index: 99999;
+    height: auto;
+    padding-left: 25px;
+  }
+  .header__menu-item.dropdown .dropdown-menu .dropdown-menu {
+    left: 30px;
+    top: 0px !important;
+  }
+  .header__menu-item.dropdown a {
+    height: auto;
+    line-height: normal;
+    &:hover {
+      color: $hover-color;
+    }
+  }
+  .gallery-border {
+    display: none;
+  }
+  header.header nav ul .dropdown-menu a {
+    font-size: 12px;
+    padding-left: 30px;
+  }
+  header.header nav ul .dropdown-menu {
+    display: block;
+    box-shadow: none;
+    border: 0;
+    position: relative !important;
+    top: 10px !important;
+    background: none !important;
+  }
+  .footer-main {
+    flex-wrap: wrap;
+  }
+  .footer-col {
+    margin-left: 0 !important;
+    flex-basis: 100% !important;
+  }
 }
 
 @media screen and (min-width: 521px) and (max-width: 740px) {
@@ -9,9 +108,42 @@
 
 
 @media screen and (max-width: 520px) {
-
+  .news-wrapper > .row {
+    margin: 0;
+    & > div {
+      padding: 0;
+    }
+  }
+  .main .about-text-wrapper {
+    width: 94%;
+    margin: 0 3%;
+    padding: 15px;
+    border-width: 8px;
+  }
+  .header {
+    min-height: 335px;
+  }
+  .gallery-slider {
+    margin-top: 10px;
+  }
+  .footer-main {
+    width: 90%;
+  }
 }
 
-@media screen and (max-width: 400px) {
-
+@media screen and (max-width: 420px) {
+  .header-block {
+    min-height: 180px;
+    top: 50px;
+  }
+  .main .about-img {
+    width: 100%;
+    position: static;
+  }
+  .main .about {
+    margin-bottom: 0;
+  }
+  .main .news {
+    width: 100%;
+  }
 }

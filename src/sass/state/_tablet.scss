@@ -1,8 +1,115 @@
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1300px) {
+  .main .about-img-1 {
+    right: 80px;
+    top: 100px;
+    width: 45%;
+  }
+  .main .about-img-2 {
+    left: 100px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header__menu-item.dropdown .dropdown-menu .dropdown-menu {
+    left: 175px;
+  }
+  .news-text {
+    overflow: hidden;
+    height: 75px;
+    margin-bottom: 15px;
+  }
+  .main .about-text-wrapper {
+    right: 0;
+    padding: 70px 50% 100px 80px;
+    width: 100%;
+    border: 15px solid #cccccc;
+    position: relative;
+  }
+  .main .about-img-1 {
+    right: -25px;
+    top: 100px;
+    width: 48%;
+  }
+  .main .about-img-2 {
+    left: 95px;
+    width: 70%;
+  }
+  .header-block {
+    width: 45%;
+    padding-right: 120px;
+  }
+  .header-img {
+    right: 10px;
+  }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1080px) {
+  .main .about-img-1 {
+    right: 20px;
+  }
 }
 
 @media screen and (max-width: 991px) {
+  .header__menu-item.dropdown .dropdown-menu .dropdown-menu {
+    left: 158px;
+  }
+  .news-img {
+    display: block;
+    width: 100%;
+  }
+  .gallery .slider-nav {
+    width: 100%;
+  }
+  .gallery-border {
+    top: -40px;
+    left: 40px;
+    width: 100%;
+  }
+  .main .about-text-wrapper {
+    padding: 30px;
+  }
+  .header-block {
+    min-height: 230px;
+  }
+  .header-text {
+    display: none;
+  }
+  .main .about-img-1 {
+    position: static;
+    margin: 20px 0 20px auto;
+    width: 60%;
+    display: block;
+  }
+  .main .about-img-2 {
+    position: relative;
+    width: 70%;
+    display: block;
+    margin: 0;
+    left: 0;
+    top: -100px;
+  }
+  .main .about {
+    margin-bottom: -70px;
+    padding-top: 0;
+  }
+  .header-wrap {
+    height: 450px;
+  }
+  .gallery-slider {
+    display: block;
+  }
+  .gallery .slider-for {
+    width: 100%;
+    max-width: 100%;
+  }
+  .gallery .slider-nav .slick-slide {
+    display: block;
+  }
+  .slick-list.draggable {
+    max-width: 100%;
+    margin-top: 15px;
+  }
+  .gallery .slider-nav .slick-slide img {
+    width: auto;
+  }
+
 }

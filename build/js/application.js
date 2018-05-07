@@ -1,8 +1,10 @@
 ;
 'use strict';
 
-$("#toggle-menu").click(function() {
+$("#toggle-menu").click(function(e) {
+    e.preventDefault();
     $(this).toggleClass("on");
+    $('.header__nav').slideToggle();
     // $(".header__menu-list").toggleClass('active');
     // $(".header__logo-wrapper").toggleClass('hide');
     // $("body").children().not('header, .header--white').toggleClass('blur');
@@ -28,7 +30,17 @@ $(function(){
         arrows: false,
         verticalSwiping: true,
         // centerMode: true,
-        focusOnSelect: true
+        focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    vertical: false,
+                    focusOnSelect: false,
+                    verticalSwiping: false,
+                }
+            }
+        ]
     });
 
     $("#header").on("click","a.link-scroll", function (event) {

@@ -5,8 +5,9 @@ html
         include ./includes/head.pug
     body
         include ./includes/header.pug
-        .container
-            .row
-                include ./includes/category/content.pug
-                include ./includes/footer.pug
+        div.main-wrapper
+            .container
+                .row
+                    include ./includes/category/content.pug
+                    include ./includes/footer.pug
     include ./includes/scripts.pug
